@@ -16,6 +16,7 @@
    * [Check the success](#step-4-check-the-success)
 4. [Summary](#summary)
 5. [Risks and Security Implications](#risks-and-security-implications)
+6. [Recommendations for Developers](#recommendations-for-developers)
 
 ## Challenge Overview
 
@@ -31,7 +32,7 @@
 
 * Register as a user with administrator privileges.
 
-#### Hints from OWASP Juice Shop itself
+#### Hints provided directly by the OWASP Juice Shop
 
 * You have to assign the unassignable.
 
@@ -55,8 +56,8 @@
 
 ### Step 1: Register a dummy user and have a look at the HTTP response
 
-* If you want to use the HTTP response to find out how a newly registered user is classified as `admin` or `customer`, it is best to register a dummy user and look at the response using Burpsuit.
-  * Open a terminal, start **Burpsuite**, navigate to the **Proxy** section and open the **Proxy Browser**.
+* If you want to use the HTTP response to find out how a newly registered user is classified as `admin` or `customer`, it is best to register a dummy user and look at the response using Burp Suite.
+  * Open a terminal, start **Burp Suite**, navigate to the **Proxy** section and open the **Proxy Browser**.
   * Open in this browser the **Owasp Juice Shop** and navigate to the **registration page**: 
     * `Login > Not yet a customer? > User Registration` or
       * `http://127.0.0.1:3000/#/register`
@@ -64,10 +65,10 @@
 
 ### Step 2: Examine the HTTP response
 
-* Switch to the Burpsuite window and have a look in the **HTTP history** tab.
+* Switch to the Burp Suite window and have a look in the **HTTP history** tab.
 * <ins>What do you see?</ins>
   * On the left side there is the registration POST request with the dummy data. 
-  * On the right side there is shown the response. The dummy data was expanded, among other things, with the parameter: `"role": "customer"`.
+  * On the right side there is displayed the response. The dummy data was expanded, among other things, with the parameter: `"role": "customer"`.
 
     ![response_role](respone_role.png)  
 
@@ -77,11 +78,11 @@
 
 ### Step 3: Specify the parameter `role` when registering
 
-* Fill out the register form with the given data and then **STOP!!!**
+* Fill out the register form with the given data and then **STOP!**
 
     ![user](user.png)  
 
-* Before clicking the *Register Button*, switch on the **Intercept mode** in the Burpsuite window to intercept the data that the form will send.
+* Before clicking the *Register Button*, switch on the **Intercept mode** in the Burp Suite window to intercept the data that the form will send.
 * Find the payload and add the parameter `"role": "admin"`:
 
     ![new_payload](new_payload.png)
@@ -105,9 +106,9 @@
 ## Summary
 
 In this challenge there is given a scenario of **Improper Input Validation** leading to a so-called **Privilege Escalation**.  
-The user's entries in the registration form are not checked before they are further processed. Using Burpsuite, it was possible to intercept the HTTP request and manipulate it - adding the key-value pair `"role":"admin"` to the payload - so that the user gets administrative privileges. Actually, this parameter is not entered via the input mask. By default, each user is set a `"custumer"` status.  
+The user's entries in the registration form are not checked before they are further processed. Using Burp Suite, it was possible to intercept the HTTP request and manipulate it - adding the key-value pair `"role":"admin"` to the payload - so that the user gets administrative privileges. Actually, this parameter is not entered via the input mask. By default, each user is assigned the status `"customer"`.  
   
-**Developers bear the primary responsibility** for preventing and fixing such vulnerabilities - Ensuring roles and permissions are controlled server-side and implementing input validation and security reviews. **Users have limited options** - They only can report the vulnerability if they find one and avoid insecure platforms.
+**Developers bear the primary responsibility** for preventing and fixing such vulnerabilities - Ensuring roles and permissions are controlled server-side and implementing input validation and security reviews. **Users have limited options** - They can only report the vulnerability if they find one and avoid insecure platforms.
 
 ## Risks and Security Implications
 
