@@ -9,11 +9,11 @@ The content is created as part of my training at the **Developer Akademie** and 
 1. [Introducing the OWASP Juice Shop](#introducing-the-owasp-juice-shop)
    * [What is a OWASP Juice Shop?](#what-is-the-owasp-juice-shop)
    * [What are the OWASP Top Ten?](#what-are-the-owasp-top-ten)
-1. [What vulnerabilities lurk in web applications?](#what-vulnerabilities-lurk-in-web-applications)
+2. [What vulnerabilities lurk in web applications?](#what-vulnerabilities-lurk-in-web-applications)
    * [Improper Input Validation](#1-improper-input-validation)
    * [Broken Authentication](#2-broken-authentication)
    * [XSS - Cross-Site Scripting](#3-xss---cross-site-scripting)
-1. [List of solved challenges so far](#list-of-solved-challenges-so-far)
+3. [List of solved challenges so far](#list-of-solved-challenges-so-far)
 
 ## Introducing the OWASP Juice Shop
 
@@ -21,6 +21,7 @@ The content is created as part of my training at the **Developer Akademie** and 
 
 The OWASP Juice Shop is not a juice shop and you can not buy juice or anything else there. But it keeps the promise of being a really bad online shop. So bad that you can even learn something - about **Web Application Security Risks**.
 
+> [!NOTE] 
 > OWASP Juice Shop is probably the most modern and sophisticated insecure web application! It can be used in security trainings, awareness demos, CTFs and as a guinea pig for security tools! Juice Shop encompasses vulnerabilities from the entire OWASP Top Ten along with many other security flaws found in real-world applications!
 [More Information](https://owasp.org/www-project-juice-shop/)
 
@@ -28,8 +29,9 @@ You want to solve the tasks by yourself? [More Information](https://github.com/j
 
 ### What are the OWASP Top Ten?
 
-The OWASP Top Ten is a list of the most common and critical web application security risks. It is created and regularly updated by the Open Web Application Security Project (OWASP) community. The list serves as a guide for developers, security analysts and companies to improve the security of their applications.  
+The OWASP Top Ten is a list of the most common and critical web application security risks. It is created and regularly updated by the Open Web Application Security Project (OWASP) community. The list serves as a guide for developers, security analysts and companies to improve the security of their applications. 
 
+> [!NOTE]
 > Companies should adopt this document and start the process of ensuring that their web applications minimize these risks. Using the OWASP Top 10 is perhaps the most effective first step towards changing the software development culture within your organization into one that produces more secure code.
 [More Information](https://owasp.org/www-project-top-ten/)
 
@@ -211,3 +213,14 @@ A successful attack on authentication mechanisms can grant attackers full access
 
 1. Regular Security Testing:
    * Conduct automated and manual penetration tests to identify vulnerabilities in the flow from Source to Sink.
+
+
+## List of solved challenges so far
+
+### <ins>Three-Star-Challenges</ins>
+
+| Name | Category | Description | Link |
+| ---- | ------- | ----------- | -------- |
+| Admin Registration | Improper Input Validation | Register as a user with administrator privileges. | [Admin Registration](./admin_registration) |
+| Björn's Favorite Pet | Broken Authentication | Reset the password of Bjoern's OWASP account via the Forgot Password mechanism with the original answer to his security question. | [Björn's Favorite Pet](./bjoern's_favorite_pet) |
+| CAPTCHA Bypass  | Broken Anti Automation | Submit 10 or more customer feedback messages within 20 seconds to simulate bypassing a CAPTCHA mechanism. | [CAPTCHA Bypass](./Capcha_bypass) |
