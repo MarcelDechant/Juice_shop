@@ -96,6 +96,7 @@ OR
 ### Step 2: Try to reset Bjoern's password
 
 * Open the login page and select `Forgot your password?` or go directly to the password reset page:
+
         ```bash
         http://127.0.0.1:3000/#/forgot-password
         ```
