@@ -14,6 +14,8 @@
    * [Shouldn't the task have been solved with the Burp Intruder?](#step-3-shouldnt-the-task-have-been-solved-with-the-burp-intruder)
 4. [Summary](#summary)
 5. [Risks and Security Recommendations](#risks-and-security-recommendations)
+6. [Recommendations for Developers](#recommendations-for-developers)
+7. [Pro Tip for Users](#pro-tip-for-users)
 
 ## Challenge Overview
   
@@ -49,7 +51,8 @@
             ```
     * There you can find Björn's email address regarding to his owasp account:
       * `bjoern@owasp.org`
-    * >i: Do not use *bjoern@juice-sh.op*. This address machtes with another security question.
+    * > [!IMPORTANT]  
+    * > Do not use *bjoern@juice-sh.op*. This address machtes with another security question.
   * Bjoern's security question
     * Once you find out the email address and enter it into the *Forgotten-Password-Form*, the security question appears automatically
       * `Name of your favorite pet?`
@@ -82,7 +85,8 @@ OR
         ![Zatschi](zatschi.png)
 
     * The three legged cat that is shown there is called **Zatschi**.
-      * >i: This path does not lead to results. It's the right cat but Zatschi is her pet name, not the pet's name.
+      * > [!NOTE]  
+      * > This path does not lead to results. It's the right cat but Zatschi is her pet name, not the pet's name.
   * Use the **Google** image search:
     * Search query: `björn kimminich owasp`
     * <ins>Result</ins>: An Instagram post from **@bkimminich** that shows Zatschi alias `Zaya`.  
@@ -151,4 +155,5 @@ If a website does not provide safe alternatives to security questions like OTP o
 
 ### Pro Tip for Users
 
+> [!WARNING] 
 > If you must use security questions, choose answers that can’t be guessed or researched — use fictional or unrelated terms.
