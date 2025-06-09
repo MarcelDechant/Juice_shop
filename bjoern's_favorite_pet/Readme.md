@@ -50,8 +50,7 @@
             http://127.0.0.1:3000/#/administration
             ```
     * There you can find Björn's email address regarding to his owasp account:
-      * `bjoern@owasp.org`
-    * 
+      * `bjoern@owasp.org` 
     * Do not use *bjoern@juice-sh.op*. This address machtes with another security question.
   * Bjoern's security question
     * Once you find out the email address and enter it into the *Forgotten-Password-Form*, the security question appears automatically
