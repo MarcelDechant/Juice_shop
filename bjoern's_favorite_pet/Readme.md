@@ -51,8 +51,8 @@
             ```
     * There you can find Björn's email address regarding to his owasp account:
       * `bjoern@owasp.org`
-    * > [!IMPORTANT]  
-    * > Do not use *bjoern@juice-sh.op*. This address machtes with another security question.
+    * 
+    * Do not use *bjoern@juice-sh.op*. This address machtes with another security question.
   * Bjoern's security question
     * Once you find out the email address and enter it into the *Forgotten-Password-Form*, the security question appears automatically
       * `Name of your favorite pet?`
