@@ -85,8 +85,7 @@ OR
         ![Zatschi](zatschi.png)
 
     * The three legged cat that is shown there is called **Zatschi**.
-      * > [!NOTE]  
-      * > This path does not lead to results. It's the right cat but Zatschi is her pet name, not the pet's name.
+      * This path does not lead to results. It's the right cat but Zatschi is her pet name, not the pet's name.
   * Use the **Google** image search:
     * Search query: `björn kimminich owasp`
     * <ins>Result</ins>: An Instagram post from **@bkimminich** that shows Zatschi alias `Zaya`.  
@@ -97,9 +96,9 @@ OR
 
 * Open the login page and select `Forgot your password?` or go directly to the password reset page:
 
-        ```bash
-        http://127.0.0.1:3000/#/forgot-password
-        ```
+  ```bash
+  http://127.0.0.1:3000/#/forgot-password
+  ```
 
 * Fill out the form:
   * Email: `bjoern@owasp.org`

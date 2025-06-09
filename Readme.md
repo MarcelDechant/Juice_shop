@@ -217,6 +217,6 @@ A successful attack on authentication mechanisms can grant attackers full access
 
 | Name | Category | Description | Link |
 | ---- | ------- | ----------- | -------- |
-| Admin Registration | Improper Input Validation | Register as a user with administrator privileges. | [Admin Registration](./admin_registration) |
-| Björn's Favorite Pet | Broken Authentication | Reset the password of Bjoern's OWASP account via the Forgot Password mechanism with the original answer to his security question. | [Björn's Favorite Pet](./bjoern's_favorite_pet) |
-| CAPTCHA Bypass  | Broken Anti Automation | Submit 10 or more customer feedback messages within 20 seconds to simulate bypassing a CAPTCHA mechanism. | [CAPTCHA Bypass](./Captcha_bypass) |
+| Admin Registration | Improper Input Validation | Register as a user with administrator privileges. | [Admin Registration](./admin_registration/Readme.md) |
+| Björn's Favorite Pet | Broken Authentication | Reset the password of Bjoern's OWASP account via the Forgot Password mechanism with the original answer to his security question. | [Björn's Favorite Pet](./bjoern's_favorite_pet/Readme.md) |
+| CAPTCHA Bypass  | Broken Anti Automation | Submit 10 or more customer feedback messages within 20 seconds to simulate bypassing a CAPTCHA mechanism. | [CAPTCHA Bypass](./Captcha_bypass/Readme.md) |
